@@ -1,0 +1,60 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.wrapper .userTable {
+    position: relative;
+    display: grid;
+    min-height: 100px;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.userTable table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.userTable table thead td {
+    font-weight: 600;
+}
+
+.userTable table tr {
+    color: var(--black1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.userTable table tr:last-child {
+    border-bottom: none;
+}
+
+.userTable table tbody tr:hover 
+{
+    background-color: var(--green);
+    color: var(--white);
+}
+
+.userTable table tr td {
+    padding: 10px;    
+}
+
+.userTable table tbody td:nth-last-child(1) a {
+    color: rgb(255, 68, 68);
+}
+
+.userTable table tbody tr:hover td:nth-last-child(1) a {
+    color: red;
+}
+
+.userTable table tbody td:nth-last-child(2) a {
+    color: #088178;
+}
+
+.userTable table tbody tr:hover td:nth-last-child(2) a {
+    color: #fff;
+}

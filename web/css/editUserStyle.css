@@ -1,0 +1,151 @@
+.wrapper {
+    position: relative;
+    width: 100%;
+    padding: 20px;
+}
+
+.editUser {
+    position: relative;
+    min-height: 500px;
+    background-color: var(--white);
+    padding: 20px;
+    box-shadow: 0 7px 25px rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
+}
+
+.editUser table {
+    width: 100%;
+}
+
+
+.editUser table td:first-child {
+    width: 30%;    
+}
+
+.form__group {
+    position: relative;
+    padding: 20px 0 0;
+    margin-top: 10px;
+    width: 100%;
+    max-width: 300px;
+}
+
+.form__field {
+    font-family: inherit;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid #9b9b9b;
+    outline: 0;
+    font-size: 17px;
+    color: #333;
+    padding: 7px 0;
+    background: transparent;
+    transition: border-color 0.2s;
+}
+
+.form__field::placeholder {
+    color: transparent;
+}
+
+.form__field:placeholder-shown~.form__label {
+    font-size: 17px;
+    cursor: text;
+    top: 20px;
+}
+
+.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #9b9b9b;
+    pointer-events: none;
+}
+
+.form__field:focus {
+    padding-bottom: 6px;
+    font-weight: 700;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #119931, #38ef69);
+    border-image-slice: 1;
+}
+
+.form__field:focus~.form__label {
+    position: absolute;
+    top: 0;
+    display: block;
+    transition: 0.2s;
+    font-size: 17px;
+    color: #088178;
+    font-weight: 700;
+}
+
+/* reset input */
+.form__field:required,
+.form__field:invalid {
+    box-shadow: none;
+}
+
+.subcontainer {
+    height: 62px;
+    width: 100%;
+    display: flex;
+    align-items: center    
+}
+
+.subcontainer label {
+    font-size: 16px;
+}
+
+.subcontainer label+label {
+    margin-left: 20px;
+}
+
+.subcontainer input[type=radio] {
+    accent-color: #088178;    
+    width: 15px;
+    height: 15px;
+}
+
+.editUser table tr:last-child {
+    height: 62px;
+    text-align: center;
+}
+
+.editUser table tr:last-child input {
+    margin-top: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #088178;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.editUser select {    
+    width: 50%;   
+    height: 20px;
+    font-size: 16px;    
+    color: #333;     
+    border-radius: 4px;
+    outline: none;    
+}
+
+.editUser .images {
+    margin-top: 10px;
+    width: 50%;
+    height: 100%;  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;  
+}
+
+.editUser .images .image-box {
+    width: 100px;
+}
+
+.editUser .images .image-box img {
+    width: 100%;
+}

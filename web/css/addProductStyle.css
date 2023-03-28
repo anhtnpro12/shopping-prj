@@ -1,0 +1,74 @@
+.container {    
+    margin: 24px 0;
+    max-width: 550px;
+}
+
+.container .forms {    
+    height: auto;
+}
+
+.input-type .type-group {    
+    display: none;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.input-type .type-group input {
+    flex: 0 0 23%;
+    max-width: 23%;
+    padding: 0 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.input-type input:focus {
+    border-bottom-color: #088178;
+}
+
+.input-type input:focus ~ i {
+    color: #088178;
+}
+
+.input-field textarea {
+    width: 100%;
+    height: 100px;
+    padding: 10px;
+    font-size: 16px;
+    resize: none;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+}
+
+.input-field textarea:focus {
+    outline-color: #088178;
+}
+
+.input-field input[type='file'] {            
+    font-size: 12px;    
+}
+
+.input-field select {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #088178;
+    border-top: 2px solid transparent;
+}
+
+.input-field select ~ i {
+    color: #088178;
+}
+
+#login .mess {
+    display: block;
+    color: #088178;
+    margin-top: 10px;
+}
